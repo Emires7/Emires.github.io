@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.te{
+    position: absolute;
+    top: 3rem;
+    left: 45%;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+h2{
+    align-items: center;
+    text-transform: uppercase;
+}
+.play{
+    position: absolute;
+    left: 45%;
+    align-items: center;
+    width: 120px;
+    border-radius: 7rem;
+    height: 40px;
+    z-index: 1;
+    outline: none;
+    letter-spacing: 1rem;
+    background-color: chocolate transparent;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+.head{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.img1{
+    animation: shakecomputer 0.8s linear;
+}
+.img1{
+    position: relative;
+    left: 33rem;
+    /* animation: fadein 22s; */
+}
+@keyframes shakecomputer{
+    0%{
+        transform: rotate(-30deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    } 
+}
+.img{
+    position: relative;
+    left: 5rem;
+    background-blend-mode: multiply;
+    animation: fadein 22s;
+}
+@keyframes fadein {
+    0% {opacity: 0;}
+     100% {opacity: 4;}
+  }
